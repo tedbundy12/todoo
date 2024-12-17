@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="title">
+      <span class="todo"><b>ToDo App</b></span
+      ><br />
+      <span class="desc">For portfolio work</span>
+    </div>
+
+    <div class="tasksContainer">
+      <h1 class="noTasks" style="display: none;">No tasks for today</h1>
+      <ul>
+        <!-- <span>sahj</span> -->
+      </ul>
+    </div>
+
+    <div class="tasksFunctional">
+      <div class="functionalTitle">
+        <span>Write a new task for today</span>
+      </div>
+      <div class="functionalDesc">
+        <div class="inputContainer">
+          <input
+            type="text"
+            placeholder="Write something.."
+            maxlength="50"
+            class="search"
+          />
+          <img src="images/checklist.png" alt="" class="searchIcon" />
+        </div>
+        <div class="buttonsContainer">
+          <button class="addTask">Add</button>
+          <button class="deleteTask">Delete All Tasks</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

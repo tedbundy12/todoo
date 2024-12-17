@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bgColor: #e4e6e7;
+
+  --h1Font: "Nunito", sans-serif;
+}
+
+html,
+body {
+  background-color: var(--bgColor);
+  user-select: none;
+  font-family: "Nunito", sans-serif;
+}
+
+.title {
+  text-align: left;
+  margin: 30px 20px;
+}
+
+.title .todo {
+  font-family: var(--h1Font);
+  font-size: 30px;
+}
+
+.title .desc {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--h1Font);
+}
+
+.tasksContainer {
+  width: 1000px;
+  /* height: auto; */
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  border: 2px solid rgba(128, 128, 128, 0.288);
+}
+
+.tasksContainer h1 {
+  font-family: var(--h1Font);
+  text-align: center;
+  font-size: 21px;
+  /* list-style-type: none; */
+  font-weight: 500;
+  padding: 45px 0px;
+}
+
+.tasksContainer li:last-child {
+  border: none;
+}
+
+.tasksContainer li {
+  width: 100%;
+  height: 30px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.288);
+  /* margin: 10px 0px; */
+  padding: 20px 15px;
+  list-style-type: none;
+  font-family: var(--h1Font);
+  display: flex;
+  align-items: center;
+}
+
+.tasksFunctional {
+  width: 1000px;
+  height: 170px;
+  background-color: #fff;
+  margin: 0 auto;
+  border: 1px solid rgba(128, 128, 128, 0.288);
+}
+
+.functionalTitle {
+  width: 100%;
+  height: 40px;
+  background-color: #eff2f1;
+  text-align: left;
+  padding: 10px 10px;
+  border: 1px solid rgba(128, 128, 128, 0.288);
+}
+
+.functionalTitle span {
+  font-family: var(--h1Font);
+  font-size: 14px;
+}
+
+.functionalDesc {
+  margin: 25px 25px;
+}
+
+input {
+  width: 500px;
+  height: 30px;
+  padding: 0px 5px;
+  font-size: 13px;
+  font-family: var(--h1Font);
+  border: 1px solid rgba(128, 128, 128, 0.288);
+  outline: none;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.searchIcon {
+  width: 18px;
+  height: 18px;
+  margin: -5px -30px;
+}
+
+.inputContainer {
+  margin-bottom: 15px;
+}
+
+.functionalDesc button {
+  width: 120px;
+  height: 30px;
+  border: none;
+  background-color: rgb(33, 96, 211);
+  color: white;
+  font-family: var(--h1Font);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.buttonsContainer {
+  display: flex;
+  gap: 5px;
+  margin: 20px 0px;
+  font-weight: 700;
+}
+
+.buttonsContainer span {
+  font-size: 14px;
+  color: red;
+  margin: 5px 0px;
+  font-weight: 700;
+}
+
+button:hover {
+  opacity: 90%;
+}
+
+.searchIcon.jumping {
+  animation: jump 0.3s ease-in-out;
+}
+
+@keyframes jump {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.taskItems img {
+  width: 25px;
+  height: 25px;
+}
+
+.taskItems button {
+  border: none;
+  background: none;
+}
+
+.taskItems {
+  float: right;
+}
+
+@media screen and (max-width: 800px) {
+  .tasksContainer {
+    width: 550px;
+  }
+
+  .tasksFunctional {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tasksContainer {
+    width: 350px;
+  }
+
+  .tasksFunctional {
+    width: 350px;
+  }
+
+  input {
+    width: 300px;
+  }
+
+  .functionalDesc button {
+    width: 110px;
+    font-size: 12px;
+  }
+
+  .buttonsContainer {
+    flex-wrap: wrap;
+  }
+
+  .buttonsContainer span {
+    font-size: 10px;
+    margin: 0px 0px;
+  }
+}
